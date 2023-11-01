@@ -14,7 +14,7 @@
 <a th:href="@{/edit(id=${user.getId()})}" th:text="UPDATE"> up </a>
 
 
-<form th:method="post" th:action="@{/delete}" th:object="${user}">
+<form th:method="DELETE" th:action="@{/delete}" th:object="${user}">
     <input type="hidden" th:field="*{id}" th:value="${user.id}" />
     <input type="hidden" th:field="*{firstName}" th:value="${user.firstName}" />
     <input type="hidden" th:field="*{lastName}" th:value="${user.lastName}" />
